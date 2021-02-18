@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/chef-server" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/delivery-platform-dynamic-price" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fleet-delivery-manager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fleet-driver-account" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fleet-optimization-manager" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fleet-order-acceptance" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fleet-telemetry-driver" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fleet-telemetry-idp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fleet-telemetry-order" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-api-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-cache-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-des" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-event-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-file-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-fleet-api" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-fleet-driver-android-clean" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-fleet-web" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-fleet-worker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-ifood" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-local-environment" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-log-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-notification" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-delivery-platform-optimizer" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-dev-cli" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ifood-tools-idp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/logistics-area" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/logistics-functions" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/terraform" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/terraform-logistics" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/terraform-prod-legacy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/terraform-v2" vcs="Git" />
+  </component>
+</project>

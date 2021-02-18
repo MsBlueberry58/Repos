@@ -51,6 +51,8 @@ public class ServidorTarefas {
                 this.threadPool.execute(distribuirTarefas);
             } catch (SocketException e) {
                 System.out.println("SocketException, está rodando? " + this.estaRodando);
+
+                System.out.println("teste1");
             }
         }
     }

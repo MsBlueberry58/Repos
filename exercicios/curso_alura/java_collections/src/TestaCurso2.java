@@ -1,6 +1,9 @@
+import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
-public class TestaCurso {
+public class TestaCurso2 {
+
     public static void main(String[] args) {
 
         Curso ColecoesJava = new Curso("Java Collections", "Joaozinho");
@@ -16,8 +19,21 @@ public class TestaCurso {
         ColecoesJava.adicionar(aula2);
         ColecoesJava.adicionar(aula3);
 
+        List<Aula> aulasImutaveis = ColecoesJava.getColecaoCursos();
 
-        System.out.println(aulasCurso);
+        List<Aula> aulas = new ArrayList<>(aulasImutaveis);
+
+        System.out.println(aulas);
+
+        Collections.sort(aulas);
+
+        System.out.println(aulas);
+
+        System.out.println("Tempo total dos cursos = " + ColecoesJava.getTempoTotal());
+
+        System.out.println(ColecoesJava);
 
     }
+
+
 }

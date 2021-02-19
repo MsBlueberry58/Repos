@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.LinkedList;
 import java.util.List;
 
@@ -14,7 +15,12 @@ public class Curso {
     }
 
     public List<Aula> getColecaoCursos() {
-        return ColecaoCursos;
+        return Collections.unmodifiableList(ColecaoCursos);
+
+    }
+
+    public void adicionar(Aula aula){
+        ColecaoCursos.add(aula);
     }
 
     public String getNome() {
@@ -23,5 +29,28 @@ public class Curso {
 
     public String getInstrutor() {
         return instrutor;
+    }
+
+    public int getTempoTotal(){
+        ColecaoCursos = this.ColecaoCursos;
+        int total = 0;
+
+        for (Aula aula:ColecaoCursos) {
+            total += aula.getTempo();
+        }
+        return total;
+
+
+    }
+
+    @Override public String toString() {
+        return "Curso: " +
+                this.getNome() +
+                ", tempo total: " +
+                this.getTempoTotal() +
+                " minutos" +
+                ", aulas: " +
+                this.getColecaoCursos()
+               ;
     }
 }

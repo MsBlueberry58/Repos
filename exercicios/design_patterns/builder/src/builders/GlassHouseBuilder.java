@@ -1,6 +1,6 @@
 package builders;
 
-public class GlassHouseBuilder implements Builder {
+public class GlassHouseBuilder implements BuilderCasa {
 
     @Override public void buildTelhado() {
         System.out.println("Construindo telhado de vidro");

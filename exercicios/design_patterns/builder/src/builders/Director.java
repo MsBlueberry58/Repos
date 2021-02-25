@@ -2,12 +2,12 @@ package builders;
 
 public class Director {
 
-    public Director(Builder builder) {
-        builder.reset();
-        String tipoCasa = builder.getBuilder();
+    public Director(BuilderCasa builderCasa) {
+        builderCasa.reset();
+        String tipoCasa = builderCasa.getBuilder();
         switch (tipoCasa){
             case "Madeira":
-                Builder casaMadeira = new WoodHouseBuilder();
+                BuilderCasa casaMadeira = new WoodHouseBuilder();
                 System.out.println("Casa de madeira: \n");
                 casaMadeira.buildChao();
                 casaMadeira.buildJanelas();
@@ -16,7 +16,7 @@ public class Director {
 
                 break;
             case "Vidro":
-                Builder casaVidro = new GlassHouseBuilder();
+                BuilderCasa casaVidro = new GlassHouseBuilder();
                 System.out.println("Casa de vidro: \n");
                 casaVidro.buildChao();
                 casaVidro.buildJanelas();
@@ -26,23 +26,25 @@ public class Director {
 
                 break;
             case "Jardim":
-                Builder casaJardim = new GardenHouseBuilder();
+                BuilderCasa casaJardim = new GardenHouseBuilder();
+                BuilderComponentes jardim = new GardenHouseBuilder();
                 System.out.println("Casa com jardim: \n");
                 casaJardim.buildChao();
                 casaJardim.buildJanelas();
                 casaJardim.buildPortas();
                 casaJardim.buildTelhado();
-                casaJardim.buildJardim();
+                jardim.buildJardim();
                 break;
 
             case "Piscina":
-                Builder casaPiscina = new PoolHouseBuilder();
+                BuilderCasa casaPiscina = new PoolHouseBuilder();
+                BuilderComponentes piscina = new PoolHouseBuilder();
                 System.out.println("Casa de madeira: \n");
                 casaPiscina.buildChao();
                 casaPiscina.buildJanelas();
                 casaPiscina.buildPortas();
                 casaPiscina.buildTelhado();
-                casaPiscina.buildPiscina();
+                piscina.buildPiscina();
 
                 break;
     }}

@@ -1,6 +1,6 @@
 package builders;
 
-public class PoolHouseBuilder implements Builder{
+public class PoolHouseBuilder implements BuilderCasa, BuilderComponentes{
 
 
     @Override public void buildTelhado() {
@@ -15,6 +15,10 @@ public class PoolHouseBuilder implements Builder{
 
     @Override public void buildChao() {
         System.out.println("Construindo chao");
+
+    }
+
+    @Override public void buildEstatuas() {
 
     }
 

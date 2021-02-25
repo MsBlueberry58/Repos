@@ -1,6 +1,6 @@
 package builders;
 
-public class GardenHouseBuilder implements Builder {
+public class GardenHouseBuilder implements BuilderCasa, BuilderComponentes {
 
 
     @Override public void buildTelhado() {
@@ -18,15 +18,6 @@ public class GardenHouseBuilder implements Builder {
 
     }
 
-    @Override public void buildJardim() {
-        System.out.println("Construindo jardim");
-
-    }
-
-    @Override public void buildPiscina() {
-        System.out.println("Construindo piscina");
-
-    }
 
     @Override public void buildJanelas() {
         System.out.println("Construindo janelas");
@@ -39,6 +30,18 @@ public class GardenHouseBuilder implements Builder {
     }
 
     @Override public void reset() {
+
+    }
+
+    @Override public void buildEstatuas() {
+
+    }
+
+    @Override public void buildJardim() {
+
+    }
+
+    @Override public void buildPiscina() {
 
     }
 }

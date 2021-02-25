@@ -17,15 +17,6 @@ public class GlassHouseBuilder implements BuilderCasa {
 
     }
 
-    @Override public void buildJardim() {
-        System.out.println("Construindo jardim");
-
-    }
-
-    @Override public void buildPiscina() {
-        System.out.println("Construindo piscina");
-
-    }
 
     @Override public void buildJanelas() {
         System.out.println("Construindo janelas");

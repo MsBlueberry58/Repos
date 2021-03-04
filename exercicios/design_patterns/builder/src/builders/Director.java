@@ -2,48 +2,40 @@ package builders;
 
 public class Director {
 
-    public Director(Builder builder) {
-        builder.reset();
-        String tipoCasa = builder.getBuilder();
-        switch (tipoCasa){
-            case "Madeira":
-                Builder casaMadeira = new WoodHouseBuilder();
-                System.out.println("Casa de madeira: \n");
-                casaMadeira.buildChao();
-                casaMadeira.buildJanelas();
-                casaMadeira.buildPortas();
-                casaMadeira.buildTelhado();
+    public Director() {
+    }
 
-                break;
-            case "Vidro":
-                Builder casaVidro = new GlassHouseBuilder();
-                System.out.println("Casa de vidro: \n");
-                casaVidro.buildChao();
-                casaVidro.buildJanelas();
-                casaVidro.buildPortas();
-                casaVidro.buildTelhado();
+    public void makePizza(PizzaBuilder builder){
+        String sabor = builder.getTipo();
 
+        switch (sabor) {
+            case "Calabresa":
+                builder.reset();
+                builder.setQueijo();
+                builder.setCalabresa();
+                builder.setCebola();
 
-                break;
-            case "Jardim":
-                Builder casaJardim = new GardenHouseBuilder();
-                System.out.println("Casa com jardim: \n");
-                casaJardim.buildChao();
-                casaJardim.buildJanelas();
-                casaJardim.buildPortas();
-                casaJardim.buildTelhado();
-                casaJardim.buildJardim();
+                System.out.println("Pizza: " + builder.getPizza());
                 break;
 
-            case "Piscina":
-                Builder casaPiscina = new PoolHouseBuilder();
-                System.out.println("Casa de madeira: \n");
-                casaPiscina.buildChao();
-                casaPiscina.buildJanelas();
-                casaPiscina.buildPortas();
-                casaPiscina.buildTelhado();
-                casaPiscina.buildPiscina();
+            case "Catupiry":
+                builder.reset();
+                builder.setCatupiry();
+
+                System.out.println("Pizza: " + builder.getPizza());
 
                 break;
-    }}
+
+            case "Pepperoni":
+                builder.setQueijo();
+                builder.setPepperoni();
+
+                System.out.println("Pizza: " + builder.getPizza());
+
+                break;
+
+        }
+
+    }
+
 }

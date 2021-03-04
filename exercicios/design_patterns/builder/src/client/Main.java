@@ -6,15 +6,15 @@ public class Main {
 
     public static void main(String[] args) {
 
-        WoodHouseBuilder fazerMadeira = new WoodHouseBuilder();
-        GardenHouseBuilder fazerJardim = new GardenHouseBuilder();
-        GlassHouseBuilder fazerVidro = new GlassHouseBuilder();
-        PoolHouseBuilder fazerPiscina = new PoolHouseBuilder();
+        Director diretor = new Director();
+        CatupiryBuilder pizzacatupiry = new CatupiryBuilder();
+        CalabresaBuilder pizzacalabresa = new CalabresaBuilder();
+        PepperoniBuilder pizzapepperoni = new PepperoniBuilder();
 
-        Director diretor = new Director(fazerMadeira);
-        Director diretor2 = new Director(fazerVidro);
-        Director diretor3 = new Director(fazerPiscina);
-        Director diretor4 = new Director(fazerJardim);
+        diretor.makePizza(pizzacatupiry);
+        diretor.makePizza(pizzacalabresa);
+        diretor.makePizza(pizzapepperoni);
+
 
 
     }
